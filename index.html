@@ -15,12 +15,13 @@
   <body>
     <div class="meteo">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="search" class="search-form-button" />
         </form>
@@ -28,7 +29,7 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="weather-data-city">Lisbon</h1>
+            <h1 class="weather-data-city" id="weather-data-city">Lisbon</h1>
             <p class="weather-data-details">
               Tuesday 18:00, scattered clouds<br />Humidity:
               <strong>65%</strong>, Wind: <strong>3,2Km</strong>
@@ -60,5 +61,6 @@
         </p>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
