@@ -3,23 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/index.css" />
     <title>Weather App</title>
   </head>
   <body>
     <div class="meteo">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Lisbon</h1>
-          <p>Tuesday 18:00, scattered clouds<br />Humidity: 65%, Wind: 3,2Km</p>
+        <div class="weather-data">
+          <div>
+            <h1 class="weather-data-city">Lisbon</h1>
+            <p class="weather-data-details">
+              Tuesday 18:00, scattered clouds<br />Humidity:
+              <strong>65%</strong>, Wind: <strong>3,2Km</strong>
+            </p>
+          </div>
+          <div class="weather-data-temperature">
+            <div class="weather-data-icon">🌤️</div>
+            <div class="weather-data-value">15</div>
+            <div class="weather-data-unit">ºC</div>
+          </div>
         </div>
-        <div>🌤️ 15ºC</div>
       </main>
       <footer>
         <p>
