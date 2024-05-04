@@ -81,13 +81,12 @@ main {
 }
 
 .weather-data-icon {
-  font-size: 44px;
-  margin-top: 22px;
-  margin-left: 10px;
+  height: 88px;
+  width: 88px;
 }
 
 .weather-data-unit {
-  margin-top: 15px;
+  margin-top: 6px;
   font-size: 28px;
 }
 
