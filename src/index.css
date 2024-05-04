@@ -91,6 +91,8 @@ main {
 }
 
 .weather-forecast {
+  display: flex;
+  justify-content: space-around;
   margin-top: 20px;
 }
 
@@ -98,8 +100,6 @@ main {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .flex-item {
@@ -109,10 +109,27 @@ main {
 }
 
 .weather-forecast-day {
-  font-size: 16px;
-  margin: 0 0 10px;
+  text-align: center;
   color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
   line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.weather-forecast-icon {
+  font-size: 38px;
+  text-align: center;
+}
+.weather-forecast-temperatures {
+  text-align: center;
+  color: #f65282;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.weather-forecast-temperature {
+  padding: 0 10px;
 }
 
 img {
