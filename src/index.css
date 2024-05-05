@@ -117,10 +117,11 @@ main {
 }
 
 .weather-forecast-icon {
-  font-size: 38px;
-  text-align: center;
+  height: 60px;
+  width: 60px;
 }
 .weather-forecast-temperatures {
+  font-size: 14px;
   text-align: center;
   color: #f65282;
   margin-top: 10px;

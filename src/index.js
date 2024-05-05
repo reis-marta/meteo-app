@@ -63,21 +63,24 @@ function getForecast(city) {
 function displayForecast(response) {
   console.log(response.data);
 
-  let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  //let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   let forecastHtml = "";
 
-  days.forEach(function (day) {
+  response.data.daily.forEach(function (day) {
     forecastHtml =
       forecastHtml +
       `
         <div class="flex-item">
-    <div class="weather-forecast-day">${day}</div>
+    <div class="weather-forecast-day">Tue</div>
     <img
-      src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+      src="${day.condition.icon_url}"
+      class="weather-forecast-icon"
       alt="icon"
       width="50px"
     />
-    <div class="weather-forecast-temperatures"><b>10º</b> 20º</div>
+    <div class="weather-forecast-temperatures"><strong>${Math.round(
+      day.temperature.maximum
+    )}º</strong> ${Math.round(day.temperature.minimum)}º</div>
   </div>
   `;
   });
